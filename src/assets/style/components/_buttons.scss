@@ -1,0 +1,64 @@
+@import "../colors";
+@import "../variables";
+
+.btn {
+  transition: all 0.2s ease;
+  border: 0;
+  border-radius: $vs-radio;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: transparent;
+  color: rgb(255, 255, 255);
+
+  &--color-primary {
+    background-color: $primary-color;
+  }
+
+  &--color-secondary {
+    background-color: $secondary-color;
+  }
+
+  &--color-success {
+    background-color: $success-color;
+  }
+
+  &--color-danger {
+    background-color: $danger-color;
+  }
+
+  &--color-warning {
+    background-color: $warning-color;
+  }
+
+  &--size-small {
+    padding: 7px;
+    font-size: 0.7em;
+  }
+
+  &--size-base {
+    padding: 10px;
+    font-size: 0.85em;
+  }
+
+  &--size-large {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  &--display-block {
+    display: block;
+    width: 100%;
+  }
+
+  &--border-rounded {
+    border-radius: 50%;
+  }
+
+  &:disabled {
+    opacity: $vs-disabled-opacity;
+    cursor: default;
+    pointer-events: none;
+  }
+}
